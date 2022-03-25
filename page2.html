@@ -13,12 +13,12 @@
 	<link rel="stylesheet" type="text/css" href="./css/et-line.min.css">
 	
     
-	<script src="./js/jquery-2.1.0.min.js"></script>
-	<script src="./js/bootstrap.min.js"></script>
-	<script src="./js/blocs.min.js"></script>
-	<script src="./js/jqBootstrapValidation.js"></script>
-	<script src="./js/formHandler.js"></script>
-    <title>page2</title>
+	<script src="./js/jquery-2.1.0.min.js" defer></script>
+	<script src="./js/bootstrap.min.js" defer></script>
+	<script src="./js/blocs.min.js" defer></script>
+	<script src="./js/jqBootstrapValidation.js" defer></script>
+	<script src="./js/formHandler.js" defer></script>
+    <title>Contactez-nous !></title>
 
     
 <!-- Analytics -->
@@ -36,19 +36,14 @@
 		<nav class="navbar row">
 			<div class="navbar-header">
 				<a class="navbar-brand" href="index.html"><img src="img/agence-la-panthere-monochrome.svg" alt="atlanta web design logo" height="40" /></a>
-				<button id="nav-toggle" type="button" class="ui-navbar-toggle navbar-toggle" data-toggle="collapse" data-target=".navbar-1">
-					<span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
-				</button>
 			</div>
 			<div class="collapse navbar-collapse navbar-1 special-dropdown-nav">
 				<ul class="site-navigation nav navbar-nav">
 					<li>
 						<a href="index.html">Accueil</a>
-					</li>
-					<li>
-					</li>
-					<li>
-						<a href="page2.html">page2 &gt;</a>
+					
+					
+						<a href="page2.html">Contact</a>
 					</li>
 				</ul>
 			</div>
@@ -80,30 +75,23 @@
 	<div class="container bloc-lg">
 		<div class="row">
 			<div class="col-sm-6">
-				<form id="form_1" novalidate success-msg="Your message has been sent." fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!">
+				<form id="form_1" novalidate="" data-success-mgs=" message has been sent." data-fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!">
 					<div class="form-group">
-						<label>
-							Nom
-						</label>
-						<input id="name" class="form-control" required />
-					</div>
+						<label for="name">Nom</label>
+						<input id="name" class="form-control" placeholder="Votre Nom" required="" >
+					<div class="help-block"></div></div>
+                    <div class="form-group">
+						<label for="email">Adresse email</label>
+						<input id="email" class="form-control" type="email" placeholder="Votre Email" required="">
+				<div class="help-block"></div></div>
 					<div class="form-group">
-						<label>
-							Adresse email
-						</label>
-						<input id="email" class="form-control" type="email" required />
-					</div>
+						<label for="source">Comment nous avez-vous connu ?</label>
+						<input id="source" class="form-control" type="text" placeholder="Votre source">
+					<div class="help-block"></div></div>
 					<div class="form-group">
-						<label>
-							Comment nous avez-vous connu ?
-						</label>
-						<input class="form-control" type="email" required id="input_504" />
-					</div>
-					<div class="form-group">
-						<label>
-							Brief de votre projet (Ajoutez autant de détails que nécessaire)<br>
-						</label><textarea id="message" class="form-control" rows="4" cols="50" required></textarea>
-					</div> 
+						<label for="message">Brief de votre projet (Ajoutez autant de détails que nécessaire)<br></label>
+						<textarea id="message" class="form-control" rows="4" cols="50"  placeholder="Votre message"  required=""></textarea>
+					<div class="help-block"></div></div>
 					<button class="bloc-button btn btn-lg btn-block cta-hero btn-atomic-tangerine" type="submit">
 						Envoyer
 					</button>
@@ -119,9 +107,6 @@
 </div>
 <!-- bloc-7 END -->
 
-<!-- ScrollToTop Button -->
-<a class="bloc-button btn btn-d scrollToTop" onclick="scrollToTarget('1')"><span class="fa fa-chevron-up"></span></a>
-<!-- ScrollToTop Button END-->
 
 
 <!-- Footer - bloc-8 -->
@@ -130,27 +115,27 @@
 		<div class="row">
 			<div class="col-sm-12">
 				<p class="text-center white">
-					Agence La Panthère - Agence web basée à Lyon.<br>
+					<strong>Agence La Panthère - Agence web basée à Lyon.</strong><br>
 				</p>
 				<div class="row row-no-gutters social">
 					<div class="col-sm-3">
 						<div class="text-center">
-							<a class="social" href="index.html"><span class="fa fa-twitter icon-md"></span></a>
+							<a class="social" href="https://www.twitter" aria-label="twitter"><span class="fa fa-twitter icon-md"></span></a>
 						</div>
 					</div>
 					<div class="col-sm-3">
 						<div class="text-center">
-							<a class="social" href="index.html"><span class="fa fa-facebook icon-md"></span></a>
+							<a class="social" href="https://www.facebook" aria-label="facebook"><span class="fa fa-facebook icon-md"></span></a>
 						</div>
 					</div>
 					<div class="col-sm-3">
 						<div class="text-center">
-							<a class="social" href="index.html"><span class="fa fa-dribbble icon-md"></span></a>
+							<a class="social" href="index.html" aria-label="La Panthère"><span class="fa fa-dribbble icon-md"></span></a>
 						</div>
 					</div>
 					<div class="col-sm-3">
 						<div class="text-center">
-							<a class="social" href="index.html"><span class="fa fa-instagram icon-md"></span></a>
+							<a class="social" href="https://www.instagram" aria-label="instagram"><span class="fa fa-instagram icon-md"></span></a>
 						</div>
 					</div>
 				</div>
