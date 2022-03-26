@@ -741,10 +741,12 @@ h4 {
 
 .white {
     color: #FFFFFF!important;
+    margin-bottom: 30px;
 }
 
 .portfolio-thumb {
     margin-bottom: 24px;
+    border-radius: 20px 20px 0 0 ;
 }
 
 .portfolio-row {
@@ -775,21 +777,27 @@ h4 {
 }
 
 .bgc-atomic-tangerine {
-    background-color: #F3976C;
+    background-color: #414345;
 }
 
 .tc-white {
     color: #FFFFFF!important;
+    text-align: center;
 }
 
 .btn-atomic-tangerine {
-    background: #F3976C;
+    background: #0575E6;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #021B79, #0575E6);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #021B79, #0575E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     color: #FFFFFF!important;
+    border-radius: 30px;
+    width: 200px;
 }
 
 .btn-atomic-tangerine:hover {
-    background: #c27956!important;
+    background: #021B79!important;
     color: #FFFFFF!important;
+    transform: scale(1.15);
 }
 
 .ltc-white {
