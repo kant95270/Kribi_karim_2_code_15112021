@@ -32,7 +32,7 @@ a:hover {
 }
 
 .bloc {
-    width: 100%;
+    width: auto;
     clear: both;
     background: 50% 50% no-repeat;
     padding: 0 50px;
@@ -49,7 +49,7 @@ a:hover {
 }
 
 .bloc-lg {
-    padding: 100px 50px;
+    padding: 50px 50px;
 }
 
 .bloc-md {
@@ -95,7 +95,7 @@ a:hover {
 }
 
 .texture-paper::before {
-    background: url("img/texture-paper.png");
+    background: url("img/texture-paper.jpg");
     background-size: 280px 280px;
 }
 
@@ -366,11 +366,11 @@ a:hover {
     z-index: 2;
 }
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
     .site-navigation {
         position: absolute;
         top: 50%;
-        right: 10px;
+        right: 20px;
         transform: translate(0, -50%);
         -webkit-transform: translateY(-50%);
     }
@@ -552,7 +552,9 @@ a[data-lightbox]:hover::before {
     color: #FFF;
     font-weight: 100;
     z-index: 1;
-    position: absolute;
+    position: relative;
+    display: block;
+    text-align: center;
     top: 50%;
     transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
@@ -641,6 +643,7 @@ a[data-lightbox]:hover img {
     padding: 0;
     color: rgba(0, 0, 0, .5);
     background: none;
+    text-align: center;
 }
 
 h1,
@@ -759,7 +762,7 @@ h4 {
 }
 
 .black-background {
-    background-color: rgba(165, 147, 99, 0.7);
+    background-color: rgba(165, 147, 99, 1);
     padding: 40px 40px 40px 40px;
 }
 
@@ -842,6 +845,7 @@ h4 {
     .bloc {
         padding-left: 20px;
         padding-right: 20px;
+      
     }
     .bloc.full-width-bloc,
     .bloc-tile-2.full-width-bloc .container,
@@ -861,13 +865,13 @@ h4 {
     }
 }
 
-@media  only screen and (min-device-width:768px)  and (max-device-width: 1024px) and (orientation: landscape) {
+@media  only screen and (min-width:768px)  and (max-width: 1024px) and (orientation: landscape) {
     .b-parallax {
         background-attachment: scroll;
     }
 }
 
-@media only screen and  (min-device-width:1024 ) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
+@media only screen and  (min-width:1024px ) and (max-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
     .b-parallax {
         background-attachment: scroll;
     }
@@ -885,10 +889,7 @@ h4 {
         overflow-x: hidden;
         position: relative;
     }
-    .bloc {
-        padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);
-    }
+    
     .bloc-group,
     .bloc-group .bloc {
         display: block;
